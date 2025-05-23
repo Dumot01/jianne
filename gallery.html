@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>4x4 Gallery – Photos & Videos</title>
+
+  <style>
+
+    * {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background-color: #f4f4f4;
+
+}
+
+
+
+header {
+
+  text-align: center;
+
+  margin-top: 20px;
+
+}
+
+
+
+h1 {
+
+  font-size: 2em;
+
+  color: #333;
+
+}
+
+
+
+.gallery {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  margin: 20px;
+
+}
+
+
+
+.gallery-item {
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.gallery-item img,
+
+.gallery-item video {
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+
+
+video {
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Gallery</h1>
+
+  </header>
+
+  <section class="gallery">
+
+    <div class="gallery-item">
+
+      <img src="image1.jpg" alt="Scenic View 1">
+
+    </div>
+
+    <div class="gallery-item">
+
+      <img src="Image2.jpg" alt="Scenic View 2">
+
+    </div>
+
+    <div class="gallery-item">
+
+      <img src="Image3.jpg" alt="Scenic View 3">
+
+    </div>
+
+    <div class="gallery-item">
+
+      <img src="Image4.jpg" alt="Scenic View 4">
+
+    </div>
+
+    <div class="gallery-item">
+
+      <video controls>
+
+        <source src="Happy woman in forest enjoying nature. Cute young girl walking outdoors.mp4" type="video/mp4">
+
+
+      </video>
+
+    </div>
+
+    <div class="gallery-item">
+
+      <video controls>
+
+        <source src="Young Woman WRITING in Journal on the Beach - HD 4K ULTRA HIGH Stock Footage (1).mp4" type="video/mp4">
+
+
+      </video>
+
+    </div>
+
+    <div class="gallery-item">
+
+      <video controls>
+
+        <source src="smiling woman appreciating the peace of nature 4n7k5m6dg  D.mp4" type="video/mp4">
+
+    
+
+      </video>
+
+    </div>
+
+    <div class="gallery-item">
+
+      <video controls>
+
+        <source src="10 MIN Guided Meditation To Clear Your Mind & Start New Positive Habits.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+
+      </video>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

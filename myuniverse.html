@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Universe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #ff4b91;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 0 transparent;
+      transition: transform 0.3s, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #ff4b91, 0 0 30px #ff4b91aa;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      filter: brightness(75%);
+      transition: filter 0.4s ease;
+    }
+
+    .card:hover img {
+      filter: brightness(100%);
+    }
+
+    .caption {
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b91;
+    }
+
+    .description {
+      padding: 0 20px 20px;
+      font-size: 15px;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      .caption {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Universe</h1>
+    <p>Exploring the world of an independent girl in tech — bold, creative, free.</p>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300.png?text=Career+in+Tech" alt="Career">
+      <div class="caption">Career Goals</div>
+      <div class="description">
+        Building a strong foundation as a front-end developer and creating meaningful digital experiences.
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300.png?text=Creative+Design" alt="Creativity">
+      <div class="caption">Creative Mind</div>
+      <div class="description">
+        Designing with imagination and emotion to make the web more beautiful, accessible, and human.
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300.png?text=Freedom+Lifestyle" alt="Freedom">
+      <div class="caption">Freedom to Explore</div>
+      <div class="description">
+        Embracing independence and travel while staying connected to passion and purpose through tech.
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300.png?text=Tech+Vibes" alt="Technology">
+      <div class="caption">Tech Vibes</div>
+      <div class="description">
+        Staying current with evolving trends, tools, and innovations that power the digital future.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 My Universe | Designed by an Independent Mind
+  </footer>
+
+</body>
+</html>
